@@ -1,0 +1,166 @@
+@font-face{
+    font-family: Nunito;
+    src: url(../../Access/Nunito-ExtraBold.ttf)
+}
+
+@font-face{
+     font-family: monset;
+    src: url(../../Access/Montserrat-Regular.ttf)
+}
+.container{
+    background: url(../../Access/img/Fondo.png);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loginContainer{
+    position: absolute;
+    width: 562px;
+    height: 372px;
+    left: 620px;
+    top: 340px;
+    
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+}
+p{
+    position: absolute;
+    left:7.54%;
+    top: 1.46%;
+    bottom: 58.52%;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 40px;
+
+letter-spacing: -0.015em;
+
+color: #01225D;
+}
+.usuario{
+    position: absolute;
+    left: 7.54%;
+    right: 18.69%;
+    top: 30.1%;
+    bottom: 51.84%;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: -0.015em;
+    color: rgba(0, 0, 0, 0.479);
+
+}
+.form-control{
+    position: absolute;
+    padding-left: 40px;
+    left: 7.54%;
+    right: 39.33%;
+    top: 38.28%;
+    width: 85%;
+    height: 11%;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    border-radius: 7px;
+}
+.personita{
+    position: absolute;
+    left: 8.54%;
+    right: 39.33%;
+    top: 39.28%;
+    height: 8%;
+    z-index: 100;
+
+}
+::-webkit-input-placeholder{
+white-space: wrap;
+justify-content: initial;
+font-family: Nunito;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 14px;
+/* or 133% */
+
+letter-spacing: -0.015em;
+
+/* Gray 3 */
+
+color: #828282a9;
+
+}
+.contraseña{
+    
+
+position: absolute;
+left: 7.54%;
+right: 18.69%;
+top: 52.96%;
+bottom: 42.99%;
+
+font-family: Nunito;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 24px;
+/* or 100% */
+
+letter-spacing: -0.015em;
+
+color: rgba(0, 0, 0, 0.479);
+
+}
+.form-control1{
+    position: absolute;
+    padding-left: 40px;
+    left: 7.54%;
+    top: 62.10%;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    border-radius: 7px;
+    width: 85%;
+    height: 11%;
+}
+.boton{
+position: absolute;
+width: 142px;
+height: 38px;
+left: 818px;
+top: 674px;
+margin: -20px 178px;
+background-color: #27AE60;
+color: white;
+font-family: monset;
+border: none;
+border-radius: 10px;
+font-size: 1vw;
+}
+.candadito{
+    position: absolute;
+    left: 9.54%;
+    right: 18.69%;
+    top: 64.96%;
+    z-index: 100;
+
+}
+@media  (max-width: 700px){
+    .container{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-size: 273%;
+    }
+}
+@media (min-width: 901px) and (max-width: 1200px){
+
+}
