@@ -1,0 +1,63 @@
+.organizando{
+    display: inline-block;
+}
+
+.list-unstyled{
+    list-style: none;
+    position: absolute;
+    width: 70%;
+    height: 50%;
+    left: 29%;
+    top: 16%;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+}
+
+.botonesPrincipal{
+    letter-spacing: -0.015em;
+    padding: 12px;
+    display: inline-flex;
+}
+
+.fecha{
+    margin:-137px 2px;
+    font-family: Nunito;
+    color: white;
+}
+
+.name{
+    margin:141px 2px;
+    font-family: Nunito;
+    color: white;
+    font-size: 1.4vw;
+}
+
+.inmuebles{
+    margin: -13% 7px;
+    padding: 4px 9px;
+    position: absolute;
+    width: 10%;
+    text-align: center;
+    background-color: #FCD545;
+    border-radius: 10px;
+    font-family: Raleway;
+font-style: normal;
+font-weight: 100;
+font-size: 0.8vw;
+line-height: 120%;
+color: rgba(0, 0, 0, 0.644);
+}
+
+.inmuebles1{
+    margin: -13% 7px;
+    padding: 4px 9px;
+    position: absolute;
+    width: 14%;
+    text-align: center;
+    background-color: #FCD545;
+    border-radius: 10px;
+    font-family: Raleway;
+font-weight: 100;
+font-size: 0.8vw;
+color: rgba(0, 0, 0, 0.644);
+}

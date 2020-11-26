@@ -18,6 +18,14 @@ class SelectBox extends Component {
       selectedItem: item,
       showItems: false,
     });
+    handleChange = e => {
+      let newState = { ...this.state };
+      newState.name = e.currentTarget.value;
+  
+      this.setState(newState);
+  
+      this.props.onUpdateDish(this.props.index, newState.name);
+    };
 
   render() {
     return (
@@ -43,6 +51,7 @@ class SelectBox extends Component {
               {this.state.items.map((item) => (
                 <div
                   key={item.id}
+                  onChange={this.handleChange}
                   onClick={() => this.selectItem(item)}
                   className={this.state.selectedItem === item ? "selected" : ""}
                 >
