@@ -6,13 +6,14 @@ import reportWebVitals from './reportWebVitals';
 //import Login from './pages/Login.js';
 import VistaPrincipal from './pages/vistaPrincipal';
 //import SelectBox from './components/selectbox';
+//import * as serviceWorker from './serviceWorker';
+//import firebaseConfig from './Access/firebase';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <VistaPrincipal/>
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+
+
+ReactDOM.render((
+    <VistaPrincipal />
+), document.getElementById('root'));
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

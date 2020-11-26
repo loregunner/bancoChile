@@ -16,7 +16,6 @@ class Login extends Component {
                     <label className='usuario'>Correo: </label>
                     <img src={persona} alt='Logo1' className='personita'/>
                     <input className='form-control' type='email' name='email' placeholder='Correo electrónico' autoFocus />
-                    
                 </div>
                 <div>    
                     <label className='contraseña'>Contraseña:</label>
