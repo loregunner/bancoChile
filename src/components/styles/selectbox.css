@@ -1,6 +1,6 @@
 .select-box--container{
     border: none;
-    height: 35px;
+    height: 35%;
     margin: 0;
     padding: 0;
     font-family: Nunito;
@@ -26,7 +26,7 @@
 .select-box--items div{
     background-color: white ;
     padding: 6px;
-    padding-left: 20px ;
+    padding-left: 10% ;
     font-family: Nunito;
     color: #6f6f6fb9;
 }
@@ -41,8 +41,8 @@
 }
 
 .select-box--arrow{
-    width: 30px;
-    height: 35px;
+    width: 15%;
+    height: 10%;
     margin: 0;
     padding: 0;
     display: inline-block;

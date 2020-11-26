@@ -21,11 +21,10 @@
 }
 .loginContainer{
     position: absolute;
-    width: 562px;
-    height: 372px;
-    left: 620px;
-    top: 340px;
-    
+    width: 40%;
+    height: 50%;
+    left: 29%;
+    top: 29%;
     background: rgba(255, 255, 255, 0.9);
     border-radius: 10px;
 }
@@ -133,10 +132,10 @@ color: rgba(0, 0, 0, 0.479);
 }
 .boton{
 position: absolute;
-width: 142px;
-height: 38px;
-left: 818px;
-top: 674px;
+width: 10%;
+height: 6%;
+left: 43%;
+top: 72%;
 margin: -20px 178px;
 background-color: #27AE60;
 color: white;
