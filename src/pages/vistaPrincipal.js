@@ -3,6 +3,7 @@ import Header from "../components/header";
 import "./styles/vistaPrincipal.css";
 import SelectBox from "../components/selectbox";
 import Menu from "../components/menu";
+import Data from "../components/data";
 class VistaPrincipal extends Component {
   render() {
     return (
@@ -12,7 +13,7 @@ class VistaPrincipal extends Component {
         <div className='select1'>
      <SelectBox 
         items={[
-          {value: 'Región de Valparaíso', id:1 },
+          {value: 'Región de Valparaíso', id:1,},
           {value: 'Región de Tarapacá', id:2 },
           {value: 'Región de Antofagasta', id:3 },
           {value: 'Región de Atacama', id:4 },
@@ -84,6 +85,7 @@ class VistaPrincipal extends Component {
           {value: 'Talagante', id:49 },
         ]}/>
         </div>
+        <Data/>
       </React.Fragment>
     );
   }
