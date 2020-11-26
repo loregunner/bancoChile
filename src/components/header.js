@@ -7,6 +7,7 @@ import edw from '../Access/img/edw.png'
 class Header extends Component {
     render(){
       return(
+        <React.Fragment>
         <div className='container1'>
           <div className='logo1'>
           <img src={credi} alt='Logo1'/>
@@ -18,6 +19,7 @@ class Header extends Component {
           <img src={edw} alt='Logo2'/>
           </div>
         </div>
+        </React.Fragment>
       );
     }
 }
