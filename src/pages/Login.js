@@ -10,10 +10,13 @@ export default class Login extends Component {
     constructor(props){
         super(props);
         this.login = this.login.bind(this);
+        this.login2 = this.login2.bind(this);
     }
 
-    login = () => {
-        let provider = new firebase.auth.GoogleAuthProvider();
+    //login Google
+    login = (e) => {
+        e.preventDefault();
+        let provider = new firebase.auth.providerData();
         
         provider.addScope('profile');
         provider.addScope('email');
@@ -22,14 +25,11 @@ export default class Login extends Component {
             console.log(result);
             //Esto le da un token de acceso a google
             let token = result.credential.accessToken;
+            console.log(token);
             // Esta es la informacion del usuario que inicia sesion
             let user = result.user;
+            console.log(user);
         });
-    
-        /* firebase.auth().signInWithPopup(provider)
-        .then(result => {
-            console.log(result);
-        }); */ 
     }
 
     render(){

@@ -4,10 +4,6 @@ import Header from '../components/header';
 import SelectBox from '../components/selectbox';
 import '../components/styles/form.css';
 
-
-
-
-
 class Form extends Component {
     
     constructor (props) {
@@ -31,12 +27,9 @@ class Form extends Component {
         direccion: '',
         region: '',
         loteo: '',
-
-
       }
     }
 
-    
     handleChange = (e) => {
       const { name, value } = e.target
       this.setState({ [name]: value })
@@ -49,18 +42,14 @@ class Form extends Component {
     }
     
     render () {
-
-        const { nombre, nacionalidad, representante, rut , estadocivil , actuando, nombreP, nacionalidadP, representanteP , rutP , estadocivilP , actuandoP, nombreProyecto, comuna, rolEvaluo, direccion, region, loteo  } = this.state
+      const { nombre, nacionalidad, representante, rut , estadocivil , actuando, nombreP, nacionalidadP, representanteP , rutP , estadocivilP , actuandoP, nombreProyecto, comuna, rolEvaluo, direccion, region, loteo  } = this.state
       
       return (
-
-
-
-            <div>
-           <Header/>
-           <Menu/>
-           <div className='select1'>
-     <SelectBox 
+      <div>
+        <Header/>
+        <Menu/>
+      <div className='select1'>
+      <SelectBox 
         items={[
           {value: 'Región de Valparaíso', id:1 },
           {value: 'Región de Tarapacá', id:2 },
@@ -127,264 +116,237 @@ class Form extends Component {
         ]}/>
         </div>
         <div>
-            <h1 className='infoBasica'>Información básica</h1>
-            </div>
+          <h1 className='infoBasica'>Información básica</h1>
+        </div>
+        
         <main  className='rectangulo'>
+        <h1 className='titulo1'>Antecedentes de las partes</h1>
+        <h2 className='titulo2'>Datos del cliente</h2>
 
-            
-           <h1 className='titulo1'>Antecedentes de las partes</h1>
-           <h2 className='titulo2'>Datos del cliente</h2>
-           
-           <form onSubmit={this.handleSubmit}>
-           
-            <div className='grupo1'  >
+        <form onSubmit={this.handleSubmit}>
+          <div className='grupo1'>
             <div>
-
-                <input
-                  type="text"
-                  name="nombre"
-                  value={nombre} 
-                  placeholder='Nombre'
-                  onChange={this.handleChange} 
-                />
-
+              <input
+                type="text"
+                name="nombre"
+                value={nombre} 
+                placeholder='Nombre'
+                onChange={this.handleChange} 
+              />
             </div>
-            
             <br/>
             <div>
-
-                <input
-                  type="text"
-                  name="nacionalidad"
-                  value={nacionalidad} 
-                  placeholder= 'Nacionalidad'
-                  onChange={this.handleChange} 
-                />
+              <input
+                type="text"
+                name="nacionalidad"
+                value={nacionalidad} 
+                placeholder= 'Nacionalidad'
+                onChange={this.handleChange} 
+              />
             </div> 
             <br/>
             <div>
-
-                <input 
-                  type="text"
-                  name="representante"
-                  value={representante} 
-                  placeholder='Representante'
-                  onChange={this.handleChange} 
-                />
+            <input 
+              type="text"
+              name="representante"
+              value={representante} 
+              placeholder='Representante'
+              onChange={this.handleChange} 
+            />
             </div>
+          </div>
+
+          <br/>
+
+          <div className='grupo1-1'>
+            <div>
+              <input 
+                type="text"
+                name="rut"
+                value={rut} 
+                placeholder='Rut'
+                onChange={this.handleChange} 
+              />
             </div>
             <br/>
-            <div className='grupo1-1'>
             <div>
-
-                <input 
-                  type="text"
-                  name="rut"
-                  value={rut} 
-                  placeholder='Rut'
-                  onChange={this.handleChange} 
-               />
-            </div>
-            <br/>
-            <div>
-
-                <input 
-                  type="text"
-                  name="estadocivil"
-                  value={estadocivil} 
-                  placeholder='Estado Civil'
-                  onChange={this.handleChange} 
-               />
+              <input 
+                type="text"
+                name="estadocivil"
+                value={estadocivil} 
+                placeholder='Estado Civil'
+                onChange={this.handleChange} 
+              />
             </div>
             <br/>            
-            
             <div>
-
-                <input 
-                  type="text"
-                  name="actuando"
-                  value={actuando} 
-                  placeholder='Actuando'
-                  onChange={this.handleChange} 
-                />
+              <input 
+                type="text"
+                name="actuando"
+                value={actuando} 
+                placeholder='Actuando'
+                onChange={this.handleChange} 
+              />
             </div>
-            </div>
-
-            <br/>
-            
-            
-
-            <h1 className='titulo3'>
-                Datos del propietario
-            </h1>
-            <div  className='grupo2'>
-            <div>
-<input  
-  type="text"
-  name="nombreP"
-  value={nombreP} 
-  placeholder='Nombre Propietario'
-  onChange={this.handleChange} 
-/>
-
-</div>
-
-<br/>
-<div>
-
-<input 
-  type="text"
-  name="nacionalidadP"
-  value={nacionalidadP} 
-  placeholder='Nacionalidad'
-  onChange={this.handleChange} 
-/>
-</div> 
-<br/>
-<div>
-
-<input 
-  type="text"
-  name="representanteP"
-  value={representanteP} 
-  placeholder='Representante'
-  onChange={this.handleChange} 
-/>
-</div>
-</div>
-<br/>
-<div className='grupo2-2'>
-<div> 
-<input 
-  type="text"
-  name="rutP"
-  value={rutP} 
-  placeholder='Rut'
-  onChange={this.handleChange} 
-/>
-</div>
-<br/>
-<div>
-
-<input 
-  type="text"
-  name="estadocivilP"
-  value={estadocivilP}
-  placeholder='Estado Civil' 
-  onChange={this.handleChange} 
-/>
-</div>
-<br/>            
-
-<div>
-
-<input  
-  type="text"
-  name="actuandoP"
-  value={actuandoP} 
-  placeholder='Actuando'
-  onChange={this.handleChange} 
-/>
-</div>
-</div>
-<br/>
-           <div  className='grupo3'>
-            <div>
-
-<input 
-  type="text"
-  name="nombreProyecto"
-  value={nombreProyecto} 
-  placeholder='Nombre proyecto (condominio, etc)'
-  onChange={this.handleChange} 
-/>
-
-</div>
-
-<br/>
-<div>
-
-<input 
-  type="text"
-  name="comuna"
-  value={comuna} 
-  placeholder='Comuna'
-  onChange={this.handleChange} 
-/>
-</div> 
-<br/>
-<div>
-
-<input  
-  type="text"
-  name="rolEvaluo"
-  value={rolEvaluo} 
-  placeholder='Rol de Evaluo'
-  onChange={this.handleChange} 
-/>
-</div>
-</div>
-<br/>
-<div className='grupo3-3'>
-<div>
-
-<input 
-  type="text"
-  name="direccion"
-  value={direccion} 
-  placeholder='Dirección'
-  onChange={this.handleChange} 
-/>
-</div>
-<br/>
-<div>
-
-<input 
-  type="text"
-  name="region"
-  value={region} 
-  placeholder='Región'
-  onChange={this.handleChange} 
-/>
-</div>
-<br/>            
-
-<div>
-
-<input 
-  type="text"
-  name="loteo"
-  value={loteo} 
-  placeholder='N° loteo o parcelación'
-  onChange={this.handleChange} 
-/>
-</div>
-</div>
-
-<br/>
-            
-         <button type="submit" className='botonGuardar'>Guardar</button>
-          </form>
-          </main>
-          <div className='contenedorFinal'>
-              <h1 className='titulo4'>¿Que tipo de inmueble es?</h1>
-
-              <div className='contenedor4-4'>
-              <h2 className='titulo4-4'>Proyectos Inmobiliarios</h2>
-              </div>
-
-              <div className='contenedor4-5'>
-              <h2 className='titulo4-5'>Inmuebles usados</h2>
-              </div>
-          
           </div>
-    </div>
-    
-    
+          
+          <br/>
+
+          <h1 className='titulo3'>
+            Datos del propietario
+          </h1>
+          <div  className='grupo2'>
+            <div>
+              <input  
+                type="text"
+                name="nombreP"
+                value={nombreP} 
+                placeholder='Nombre Propietario'
+                onChange={this.handleChange} 
+              />
+            </div>
+            <br/>
+            <div>
+              <input 
+                type="text"
+                name="nacionalidadP"
+                value={nacionalidadP} 
+                placeholder='Nacionalidad'
+                onChange={this.handleChange} 
+              />
+            </div> 
+            <br/>
+            <div>
+              <input 
+                type="text"
+                name="representanteP"
+                value={representanteP} 
+                placeholder='Representante'
+                onChange={this.handleChange} 
+              />
+            </div>
+          </div>
+          
+          <br/>
+
+          <div className='grupo2-2'>
+            <div> 
+              <input 
+                type="text"
+                name="rutP"
+                value={rutP} 
+                placeholder='Rut'
+                onChange={this.handleChange} 
+              />
+            </div>
+            <br/>
+            <div>
+              <input 
+                type="text"
+                name="estadocivilP"
+                value={estadocivilP}
+                placeholder='Estado Civil' 
+                onChange={this.handleChange} 
+              />
+            </div>
+            <br/>            
+            <div>
+              <input  
+                type="text"
+                name="actuandoP"
+                value={actuandoP} 
+                placeholder='Actuando'
+                onChange={this.handleChange} 
+              />
+            </div>
+          </div>
+          
+          <br/>
+
+          <div  className='grupo3'>
+            <div>
+              <input 
+                type="text"
+                name="nombreProyecto"
+                value={nombreProyecto} 
+                placeholder='Nombre proyecto (condominio, etc)'
+                onChange={this.handleChange} 
+              />
+            </div>
+            <br/>
+            <div>
+              <input 
+                type="text"
+                name="comuna"
+                value={comuna} 
+                placeholder='Comuna'
+                onChange={this.handleChange} 
+              />
+            </div> 
+            <br/>
+            <div>
+              <input  
+                type="text"
+                name="rolEvaluo"
+                value={rolEvaluo} 
+                placeholder='Rol de Evaluo'
+                onChange={this.handleChange} 
+              />
+            </div>
+          </div>
+            
+          <br/>
+
+          <div className='grupo3-3'>
+            <div>
+              <input 
+                type="text"
+                name="direccion"
+                value={direccion} 
+                placeholder='Dirección'
+                onChange={this.handleChange} 
+              />
+            </div>
+            <br/>
+            <div>
+              <input 
+                type="text"
+                name="region"
+                value={region} 
+                placeholder='Región'
+                onChange={this.handleChange} 
+              />
+            </div>
+            <br/>
+            <div>
+              <input 
+                type="text"
+                name="loteo"
+                value={loteo} 
+                placeholder='N° loteo o parcelación'
+                onChange={this.handleChange} 
+              />
+            </div>
+          </div>
+          <br/>
+          <button type="submit" className='botonGuardar'>Guardar</button>
+        </form>
+        </main>
+                          
+        <div className='contenedorFinal'>
+          <h1 className='titulo4'>¿Que tipo de inmueble es?</h1>
+
+          <div className='contenedor4-4'>
+            <h2 className='titulo4-4'>Proyectos Inmobiliarios</h2>
+          </div>
+
+          <div className='contenedor4-5'>
+            <h2 className='titulo4-5'>Inmuebles usados</h2>
+          </div>    
+        </div>
+      </div>
       )
     }
-  }
-  
+}
 
-
-  export default Form
+export default Form

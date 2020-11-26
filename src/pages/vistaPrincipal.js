@@ -11,7 +11,7 @@ class VistaPrincipal extends Component {
         <Header />
         <Menu />
         <div className='select1'>
-     <SelectBox 
+    <SelectBox 
         items={[
           {value: 'Región de Valparaíso', id:1,},
           {value: 'Región de Tarapacá', id:2 },
