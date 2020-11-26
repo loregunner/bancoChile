@@ -349,11 +349,6 @@ class Form extends Component {
             
             <button type="submit">Send</button>
           </form>
-  
-          <div>
-              <h2>Values of the form</h2>
-              <p>{JSON.stringify(this.state)}</p>
-          </div>
     </div>
       )
     }
