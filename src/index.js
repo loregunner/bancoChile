@@ -7,9 +7,6 @@ import reportWebVitals from './reportWebVitals';
 import VistaPrincipal from './pages/vistaPrincipal';
 //import Header from './components/header';
 //import SelectBox from './components/selectbox';
-//import * as serviceWorker from './serviceWorker';
-//import firebaseConfig from './Access/firebase';
-
 
 
 ReactDOM.render((
