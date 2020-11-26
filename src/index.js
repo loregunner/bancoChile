@@ -4,12 +4,13 @@ import './index.css';
 //import App from './App';
 import reportWebVitals from './reportWebVitals';
 //import Login from './pages/Login.js';
-import VistaPrincipal from './pages/vistaPrincipal';
+//import VistaPrincipal from './pages/vistaPrincipal';
+import Form from './components/form';
 //import SelectBox from './components/selectbox';
 
 ReactDOM.render(
   <React.StrictMode>
-    <VistaPrincipal/>
+    <Form/>
   </React.StrictMode>,
   document.getElementById('root')
 );
