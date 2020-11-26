@@ -3,11 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 //import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Login from './pages/Login.js';
+//import Login from './pages/Login.js';
+import VistaPrincipal from './pages/vistaPrincipal';
+//import SelectBox from './components/selectbox';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Login />
+    <VistaPrincipal/>
   </React.StrictMode>,
   document.getElementById('root')
 );

@@ -1,0 +1,107 @@
+@font-face{
+    font-family: raleway;
+    src:  url(../../Access/raleway.ttf)
+}
+.select1{
+    position: absolute;
+    top: 50%;
+  left: 2%;
+}
+.select2{
+    position: absolute;
+    top: 57%;
+    left: 2%;
+}
+.menu{
+    width: 23%;
+    height: 87% ;
+    background-color: #01225D;
+    top: 19%;
+    position: absolute;
+    border: none;
+    border-radius: 10px;
+    box-sizing: content-box;
+}
+    
+.ancla{
+    position: absolute;
+    top: 13.5%;
+    left: 5%;
+    text-decoration: none;
+    font-size: 1.5vw;
+    font-family: Nunito;
+}
+.volver{
+    position: absolute;
+    width: 1%;
+    top: 14%;
+    left: 3.1%;
+    font-size: 1.5vw;
+   
+}
+.botonNuevo{
+position: absolute;
+width: 150px;
+height: 37px;
+left: 34px;
+top: 93px;
+font-family: raleway;
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+display: flex;
+align-items: center;
+text-align: right;
+background-color: #27AE60;
+border-radius:5px ;
+padding: 20.2px;
+/* Color A03 */
+
+color: #FFFFFF;
+}
+
+.mas{
+position: absolute;
+width: 21px;
+height: 21px;
+left: 37px;
+top: 104px;
+color: white;
+z-index: 100;
+}
+
+.mujer{
+position: absolute;
+width: 36px;
+height: 36px;
+left: 30px;
+top: 35px;
+border: 0.5px solid #4F4F4F;
+box-sizing: border-box;
+border-radius: 20px;
+}
+
+h1{
+ position: absolute;
+width: 154px;
+height: 20px;
+left: 76px;
+top: 32px;
+color: white;
+font-family: Raleway;
+font-style: normal;
+font-weight: bold;
+font-size: 20px;
+line-height: 100%;
+z-index: 100;
+}
+
+h2{
+    position: absolute;
+    top: 28%;
+    left: 32px;
+    font-family: Nunito;
+font-style: normal;
+font-size: 14px;
+color: #F2F2F2;
+}
