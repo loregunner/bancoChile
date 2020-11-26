@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Menu from '../components/menu';
 import Header from '../components/header';
 import SelectBox from '../components/selectbox';
-import './styles/form.css';
+import '../components/styles/form.css';
 
 
 
@@ -126,14 +126,21 @@ class Form extends Component {
           {value: ' Maipú', id:41 },
         ]}/>
         </div>
-    
-  
-           <h1>Antecedentes de las partes</h1>
-           <h2>Datos del cliente</h2>
+        <div>
+            <h1 className='infoBasica'>Información básica</h1>
+            </div>
+        <main  className='rectangulo'>
+
+            
+           <h1 className='titulo1'>Antecedentes de las partes</h1>
+           <h2 className='titulo2'>Datos del cliente</h2>
+           
            <form onSubmit={this.handleSubmit}>
+           
+            <div className='grupo1'  >
             <div>
 
-                <input 
+                <input
                   type="text"
                   name="nombre"
                   value={nombre} 
@@ -146,7 +153,7 @@ class Form extends Component {
             <br/>
             <div>
 
-                <input 
+                <input
                   type="text"
                   name="nacionalidad"
                   value={nacionalidad} 
@@ -165,7 +172,9 @@ class Form extends Component {
                   onChange={this.handleChange} 
                 />
             </div>
+            </div>
             <br/>
+            <div className='grupo1-1'>
             <div>
 
                 <input 
@@ -199,16 +208,18 @@ class Form extends Component {
                   onChange={this.handleChange} 
                 />
             </div>
+            </div>
+
             <br/>
             
-            <div>
+            
 
-            <h1>
+            <h1 className='titulo3'>
                 Datos del propietario
             </h1>
+            <div  className='grupo2'>
             <div>
-
-<input 
+<input  
   type="text"
   name="nombreP"
   value={nombreP} 
@@ -240,9 +251,10 @@ class Form extends Component {
   onChange={this.handleChange} 
 />
 </div>
+</div>
 <br/>
-<div>
-
+<div className='grupo2-2'>
+<div> 
 <input 
   type="text"
   name="rutP"
@@ -266,7 +278,7 @@ class Form extends Component {
 
 <div>
 
-<input 
+<input  
   type="text"
   name="actuandoP"
   value={actuandoP} 
@@ -274,8 +286,9 @@ class Form extends Component {
   onChange={this.handleChange} 
 />
 </div>
+</div>
 <br/>
-           
+           <div  className='grupo3'>
             <div>
 
 <input 
@@ -302,7 +315,7 @@ class Form extends Component {
 <br/>
 <div>
 
-<input 
+<input  
   type="text"
   name="rolEvaluo"
   value={rolEvaluo} 
@@ -310,7 +323,9 @@ class Form extends Component {
   onChange={this.handleChange} 
 />
 </div>
+</div>
 <br/>
+<div className='grupo3-3'>
 <div>
 
 <input 
@@ -344,12 +359,28 @@ class Form extends Component {
   onChange={this.handleChange} 
 />
 </div>
+</div>
+
 <br/>
-            </div>
             
-            <button type="submit">Send</button>
+         <button type="submit" className='botonGuardar'>Guardar</button>
           </form>
+          </main>
+          <div className='contenedorFinal'>
+              <h1 className='titulo4'>¿Que tipo de inmueble es?</h1>
+
+              <div className='contenedor4-4'>
+              <h2 className='titulo4-4'>Proyectos Inmobiliarios</h2>
+              </div>
+
+              <div className='contenedor4-5'>
+              <h2 className='titulo4-5'>Inmuebles usados</h2>
+              </div>
+          
+          </div>
     </div>
+    
+    
       )
     }
   }

@@ -6,6 +6,8 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 //import Login from './pages/Login.js';
 //import VistaPrincipal from './pages/vistaPrincipal';
+//import Header from './components/header';
+//import VistaPrincipal from './pages/vistaPrincipal';
 import Form from './components/form';
 //import SelectBox from './components/selectbox';
 
