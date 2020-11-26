@@ -5,6 +5,7 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 //import Login from './pages/Login.js';
 import VistaPrincipal from './pages/vistaPrincipal';
+//import Header from './components/header';
 //import SelectBox from './components/selectbox';
 
 ReactDOM.render(
