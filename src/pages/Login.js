@@ -4,9 +4,8 @@ import firebase from '../Access/firebase';
 import persona from '../Access/img/personita.png';
 import candado from '../Access/img/candadito.png';
 import './styles/Login.css';
-//import Router from '../Router';
-//import { NavLink } from 'react-router-dom';
 import Header from '../components/header';
+//import Router from '../Router';
 
 export default class Login extends Component {
     constructor(props){
@@ -16,6 +15,7 @@ export default class Login extends Component {
     
     login = (e) => {
         e.preventDefault();
+
         let provider = new firebase.auth.GoogleAuthProvider();
         
         provider.addScope('profile');
@@ -49,8 +49,9 @@ export default class Login extends Component {
                                 <label className='contraseña'>Contraseña:</label>
                                 <img src={candado} alt='Logo1' className='candadito'/>
                                 <input className='form-control1' type='password' name='password' placeholder='Contraseña' />
-                                <button className='boton' onClick={this.login}> 
-                                    Iniciar sesión 
+                                
+                                <button className='boton' onClick={this.login}>
+                                    Iniciar sesión
                                 </button>
                             </div>
                         </form>

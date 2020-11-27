@@ -9,9 +9,10 @@ import Router from './Router';
 
 export default class App extends Component {
   render(){
-    <Router />
+    
     return(
       <div className="App">
+        <Router />
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
         </header>
