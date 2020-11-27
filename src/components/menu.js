@@ -25,7 +25,7 @@ class Menu extends Component {
             <img src={mujer} alt='Logo1' className='mujer'/>
             <h1>Carla Rodriguez</h1>
             <img src={mas} alt='Logo1' className='mas'/>
-                <Link className='botonNuevo' type='button' to='./form'>Nuevo Proyecto</ Link>
+                <Link className='botonNuevo' type='button' to='./bancoChile/form'>Nuevo Proyecto</ Link>
                 <h2>VER POR</h2>
             </div>
             </div>
