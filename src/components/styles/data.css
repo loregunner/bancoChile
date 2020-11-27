@@ -2,6 +2,51 @@
     display: inline-block;
 }
 
+.abajo{
+    height: 19%;
+    border: 1px solid rgba(0, 0, 0, 0.274);
+    position: absolute;
+    width: 19.7%;
+    margin: 14% -0.120%;
+    border-radius: 0px 0px 10px 10px;
+    border-top: none;
+    box-shadow: 60px;
+    box-shadow: 2px 2px 0px 1px rgba(0, 0, 0, 0.055);
+}
+
+.botonInfor{
+    margin: 11% 8%;
+    left: 9.18%;
+    right: 63.53%;
+    top: 91.49%;
+    bottom: 35.87%;
+    padding: 2% 8%;
+    border: initial;
+    border-radius: 3px;
+    background-color: white;
+    border: 1px solid whitesmoke;
+    font-family: Raleway;
+font-style: normal;
+font-weight: normal;
+font-size: 1vw;
+line-height: 120%;
+color: #4F4F4F;
+}
+.botonVer{
+    text-decoration: none;
+    padding: 2.5%;
+    position: absolute;
+    padding-left: 8%;
+    padding-right: 7%;
+    left: 54%;
+    top: 34%;
+    font-family: Raleway;
+    font-size: 1vw;
+    color: rgba(255, 255, 255, 0.664);
+    background-color: #27AE60;
+    border-radius: 5px;
+    border: none;
+}
 .list-unstyled{
     list-style: none;
     position: absolute;
@@ -20,9 +65,10 @@
 }
 
 .fecha{
-    margin:-137px 2px;
+    margin: -73% 1%;
     font-family: Nunito;
     color: white;
+    z-index: 999;
 }
 
 .name{

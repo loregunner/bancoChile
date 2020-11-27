@@ -105,6 +105,13 @@ input{
     
 }
 
+.selectEstado{
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
 .titulo3{
     position: absolute;
 width: 951px;

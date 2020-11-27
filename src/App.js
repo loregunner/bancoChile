@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
-//import { Component } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Component } from 'react';
 //import Login from './pages/Login';
 //import Login from './pages/Login';
 //import VistaPrincipal from './pages/vistaPrincipal';
