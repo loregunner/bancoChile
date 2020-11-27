@@ -4,6 +4,7 @@ import "./styles/vistaPrincipal.css";
 import SelectBox from "../components/selectbox";
 import Menu from "../components/menu";
 import Data from "../components/data";
+
 class VistaPrincipal extends Component {
   constructor(props){
     super(props);
@@ -76,6 +77,7 @@ class VistaPrincipal extends Component {
     }
   }
   render() {
+
     return (
     <React.Fragment>
         <Header />
@@ -90,8 +92,8 @@ class VistaPrincipal extends Component {
         </div>
         <Data/>
       </React.Fragment>
-    );
-  }
+   
+    )}
 }
 
 export default VistaPrincipal;
