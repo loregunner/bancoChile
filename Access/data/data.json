@@ -1,0 +1,84 @@
+{
+    "data": [
+      {
+        "id": "1",
+        "name": "Edificio Ana",
+        "fecha": "10/02/2016",
+        "proyecto": "Inmuebles Usados",
+        "ubicación": "Región de Valparaíso",
+        "comuna": "Colina"
+      },
+      {
+        "id": "2",
+        "name": "Apartamento Juan",
+        "fecha": "03/06/2020",
+        "proyecto": "Proyectos Inmobiliarios",
+        "ubicación": "Región de Valparaíso",
+        "comuna": "Colina"
+      },
+      {
+        "id": "3",
+        "name": "Casa Familia Gonzales",
+        "fecha": "05/08/2010",
+        "proyecto": "Inmuebles Usados",
+        "ubicación": "Región de Valparaíso",
+        "comuna": "Colina"
+      },
+      {
+        "id": "4",
+        "name": "Casa Familia Laguna",
+        "fecha": "25/03/2019",
+        "proyecto": "Proyectos Inmobiliarios",
+        "ubicación": "Región de Valparaíso",
+        "comuna": "Colina"
+      },
+      {
+        "id": "5",
+        "name": "Apartamento Colina",
+        "fecha": "25/05/2012",
+        "proyecto": "Inmuebles Usados",
+        "ubicación": "Región de Valparaíso",
+        "comuna": "Colina"
+      },
+      {
+        "id": "6",
+        "name": "Apartamentos Forero",
+        "fecha": "25/06/2019",
+        "proyecto": "Proyectos Inmobiliarios",
+        "ubicación": "Región de Valparaíso",
+        "comuna": "Lampa"
+      },
+      {
+        "id": "7",
+        "name": "Apartamento Andrea",
+        "fecha": "31/10/2020",
+        "proyecto": "Proyectos Inmobiliarios",
+        "ubicación": "Región de Valparaíso",
+        "comuna": "Lampa"
+      },
+      {
+        "id": "8",
+        "name": "Casa Familia Perez",
+        "fecha": "15/03/2010",
+        "proyecto": "Inmuebles Usados",
+        "ubicación": "Región de Valparaíso",
+        "comuna": "Lampa"
+      },
+      {
+        "id": "9",
+        "name": "Casa Familia Guevara",
+        "fecha": "29/04/2019",
+        "proyecto": "Proyectos Inmobiliarios",
+        "ubicación": "Región de Valparaíso",
+        "comuna": "Lampa"
+      },
+      {
+        "id": "10",
+        "name": "Edificio Pedro",
+        "fecha": "11/04/2005",
+        "proyecto": "Inmuebles Usados",
+        "ubicación": "Región de Valparaíso",
+        "comuna": "Lampa"
+      }
+    ]
+  }
