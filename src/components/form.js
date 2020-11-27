@@ -3,6 +3,7 @@ import Menu from '../components/menu';
 import Header from '../components/header';
 import SelectBox from '../components/selectbox';
 import firebase from '../Access/firebase';
+import 'firebase/firestore'
 import '../components/styles/form.css';
 
 class Form extends Component {
@@ -39,7 +40,26 @@ class Form extends Component {
     handleSubmit = (e) => {
       e.preventDefault()
       const values = JSON.stringify(this.state)
-      alert(values)
+      console.log(values)
+      let db = firebase.firestore();
+
+      db.collection('cliente').add({
+        nombre:this.state.nombre,
+        nacionalidad:this.state.nacionalidad,
+        representante:this.state.representante,
+        rut:this.state.rut,
+        estadocivil:this.state.estadocivil,
+        actuando:this.state.actuando
+      })
+
+      db.collection('propietario').add({
+        nombreP:this.state.nombreP,
+        nacionalidadP:this.state.nacionalidadP,
+        representanteP:this.state.representante,
+        rutP:this.state.rut,
+        estadocivilP:this.state.estadocivil,
+        actuandoP:this.state.actuando
+      })
     }
     
     render () {
