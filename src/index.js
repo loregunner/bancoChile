@@ -3,19 +3,22 @@ import ReactDOM from 'react-dom';
 //import Data from './components/data';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './index.css';
-//import App from './App';
 import reportWebVitals from './reportWebVitals';
 //import Login from './pages/Login.js';
 //import Form2 from './components/form2';
-//import Header from './components/header';
+//import App from './App';
+//import Login from './pages/Login';
+//import Form from './components/form';
 //import VistaPrincipal from './pages/vistaPrincipal';
-import Form from './components/form';
-//import SelectBox from './components/selectbox';
+
+//import Header from './components/header';
+import Router from './Router';
+
 
 
 ReactDOM.render(
   <React.StrictMode>
-    <Form/>
+    <Router />
   </React.StrictMode>,
   document.getElementById('root')
 );

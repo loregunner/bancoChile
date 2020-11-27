@@ -4,15 +4,16 @@ import "./styles/vistaPrincipal.css";
 import SelectBox from "../components/selectbox";
 import Menu from "../components/menu";
 import Data from "../components/data";
+
 class VistaPrincipal extends Component {
   render() {
+
     return (
     <React.Fragment>
-        <Header />
-        <Menu />
-        <div className='select1'>
-     <SelectBox 
-        items={[
+      <Header />
+      <Menu />
+      <div className='select1'>
+        <SelectBox items={[
           {value: 'Región de Valparaíso', id:1,},
           {value: 'Región de Tarapacá', id:2 },
           {value: 'Región de Antofagasta', id:3 },
@@ -29,12 +30,12 @@ class VistaPrincipal extends Component {
           {value: 'Región de Los Lagos', id:14 },
           {value: 'Región de Aysén', id:15 },
           {value: 'Región de Magallanes', id:16 },
-          {value: 'Reg. de Arica y Parinacota', id:17 }, 
+          {value: 'Reg. de Arica y Parinacota', id:17 }
         ]}/>
-        </div>
-        <div className='select2'>
-        <SelectBox 
-        items={[
+    </div>
+
+    <div className='select2'>
+        <SelectBox items={[
           {value: 'Colina', id:1 },
           {value: ' Lampa', id:2 },
           {value: ' Til Til', id:3 },
@@ -82,12 +83,11 @@ class VistaPrincipal extends Component {
           {value: ' Isla de Maipo', id:46 },
           {value: 'Padre Hurtado', id:47 },
           {value: 'Peñaflor', id:48 },
-          {value: 'Talagante', id:49 },
+          {value: 'Talagante', id:49 }
         ]}/>
-        </div>
-        <Data/>
-      </React.Fragment>
-    );
+    </div>
+    <Data />
+    </React.Fragment>);
   }
 }
 
