@@ -23,8 +23,8 @@
     position: absolute;
     width: 35%;
     height: 50%;
-    left:31%;
-    top: 33%;
+    left: 32%;
+    top: 29%;
     background: rgba(255, 255, 255, 0.9);
     border-radius: 10px;
 }
@@ -130,19 +130,19 @@ color: rgba(0, 0, 0, 0.479);
     width: 85%;
     height: 11%;
 }
-.boton{
-position: absolute;
-width: 10%;
-height: 5%;
-left: 41%;
-top: 76%;
-margin: -20px 178px;
-background-color: #27AE60;
-color: white;
-font-family: monset;
-border: none;
-border-radius: 10px;
-font-size: 1vw;
+.boton {
+    position: absolute;
+    width: 25%;
+    height: 8.5%;
+    left: 40%;
+    top: 72%;
+    margin: 39px 178px;
+    background-color: #27AE60;
+    color: white;
+    font-family: monset;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.3vw;
 }
 .candadito{
     position: absolute;

@@ -1,19 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-//import Data from './components/data';
 import './index.css';
-//import App from './App';
 import reportWebVitals from './reportWebVitals';
-import VistaPrincipal from './pages/vistaPrincipal';
+//import App from './App';
 //import Login from './pages/Login';
+//import Form from './components/form';
+//import VistaPrincipal from './pages/vistaPrincipal';
 //import Header from './components/header';
-//import SelectBox from './components/selectbox';
+import Router from './Router';
+
 
 ReactDOM.render(
-    <React.StrictMode>
-        <VistaPrincipal />
-    </React.StrictMode>,
-    document.getElementById('root')
+  <React.StrictMode>
+    <Router />
+  </React.StrictMode>,
+  document.getElementById('root')
 );
 
 // If you want to start measuring performance in your app, pass a function
