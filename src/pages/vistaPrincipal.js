@@ -26,6 +26,7 @@ class VistaPrincipal extends Component {
       {value: 'Región de Aysén', id:15 },
       {value: 'Región de Magallanes', id:16 },
       {value: 'Reg. de Arica y Parinacota', id:17 },],
+      
       comunas:[ {value: 'Colina', id:1 },
       {value: ' Lampa', id:2 },
       {value: ' Til Til', id:3 },
@@ -76,6 +77,7 @@ class VistaPrincipal extends Component {
       {value: 'Talagante', id:49 },]
     }
   }
+
   render() {
 
     return (
@@ -83,16 +85,16 @@ class VistaPrincipal extends Component {
         <Header />
         <Menu />
         <div className='select1'>
-     <SelectBox 
-        items={this.state.regiones}/>
+          <SelectBox 
+            items={this.state.regiones}/>
         </div>
         <div className='select2'>
-        <SelectBox 
-        items={this.state.comunas}/>
+          <SelectBox 
+            items={this.state.comunas}/>
         </div>
         <Data/>
       </React.Fragment>
-   
+    )
   }
 }
 

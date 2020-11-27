@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 //import Data from './components/data';
-import 'bootstrap/dist/css/bootstrap.min.css'
+//import 'bootstrap/dist/css/bootstrap.min.css'
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 //import Login from './pages/Login.js';
@@ -13,8 +13,6 @@ import reportWebVitals from './reportWebVitals';
 
 //import Header from './components/header';
 import Router from './Router';
-//import { NavLink } from 'react-router-dom';
-
 
 
 ReactDOM.render(
