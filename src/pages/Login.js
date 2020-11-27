@@ -5,6 +5,7 @@ import persona from '../Access/img/personita.png';
 import candado from '../Access/img/candadito.png';
 import './styles/Login.css';
 import Router from '../Router';
+import Header from '../components/header';
 //import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 export default class Login extends Component {
@@ -34,6 +35,8 @@ export default class Login extends Component {
     
     render(){
         return(
+            <React.Fragment>
+               <Header/>
             <div className='container'>
                 <div className='loginContainer'>
                     <p>Iniciar sesión</p>
@@ -54,6 +57,7 @@ export default class Login extends Component {
                     </form>
                 </div>
             </div>
+            </React.Fragment> 
         );
     }
 }
