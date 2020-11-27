@@ -21,6 +21,10 @@ class Data extends Component{
                         <div  className='name'>{e.name}</div>
                         <div className='inmuebles'>{e.proyecto}</div>
                        </li>
+                       <div className='abajo'>
+                       <button className='botonInfor' type='button'>Informe</button>
+                       <button className='botonVer' type='button'>Ver más</button>
+                       </div>
                      </div>
                    </React.Fragment>)
             }
@@ -29,11 +33,15 @@ class Data extends Component{
                     <React.Fragment key={e.id}>
                      <div className='botonesPrincipal'>
                        <li className='lista'>
-                         <img className='imgPrincipal' src={edificio} alt='imagen'/> 
+                       <img className='imgPrincipal' id="image" src={edificio} alt='imagen'/>
                          <div className='fecha'>{e.fecha}</div>
                         <div className='name'>{e.name}</div>
                         <div className='inmuebles1'>{e.proyecto}</div>
                        </li>
+                       <div className='abajo'>
+                       <button className='botonInfor' type='button'>Informe</button>
+                       <button className='botonVer' type='button'>Ver más</button>
+                       </div>
                      </div>
                    </React.Fragment>)
             }
