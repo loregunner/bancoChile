@@ -20,9 +20,9 @@ class Router extends Component {
         return(
             <BrowserRouter>
                 <Switch>
-                    <Route exact path="/" component={Login} />
-                    <Route exact path="/vista1" component={VistaPrincipal} />
-                    <Route exact path="/form" component={Form} />
+                    <Route exact path="/bancoChile/" component={Login} />
+                    <Route exact path="/bancoChile/vista1" component={VistaPrincipal} />
+                    <Route exact path="/bancoChile/form" component={Form} />
                     
                     <Route component ={Error} />
                 </Switch>
