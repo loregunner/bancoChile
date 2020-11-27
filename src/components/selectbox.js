@@ -1,9 +1,12 @@
 import React, { Component } from "react";
 import "./styles/selectbox.css";
+ import todo from '../Access/data/data.json'
+import Data from './data.js'
 class SelectBox extends Component {
   state = {
     items: this.props.items || [],
     showItems: false,
+    data: todo.data,
     selectedItem: this.props.items && this.props.items[0],
   };
 
@@ -21,13 +24,19 @@ class SelectBox extends Component {
     handleChange = e => {
       let newState = { ...this.state };
       newState.name = e.currentTarget.value;
+     newState.todo = todo.data.sort((s) => {
+      if(newState.name === s.comuna.includes('Lampa')){
+      }
+     })
+
   
       this.setState(newState);
   
-      this.props.onUpdateDish(this.props.index, newState.name);
+      this.props.onUpdateDish(this.props.index, newState.name, newState.todo);
     };
 
   render() {
+    
     return (
       <div>
         <div className="select-box--box" style={{width: this.props.width || 250}}>
