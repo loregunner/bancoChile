@@ -1,16 +1,19 @@
 import logo from './logo.svg';
 import './App.css';
-//import { Component } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Component } from 'react';
 //import Login from './pages/Login';
 //import Login from './pages/Login';
 //import VistaPrincipal from './pages/vistaPrincipal';
 import Router from './Router';
+//import firebase from './Access/firebase';
+
 
 export default class App extends Component {
-  render(){
-    <Router />
+  render(){  
     return(
       <div className="App">
+        <Router />
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
         </header>

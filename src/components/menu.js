@@ -1,10 +1,21 @@
 import React, { Component } from 'react'
 import volver from '../Access/img/volver.png'
 import mas from '../Access/img/openmoji_more-information.png'
+import Form from './form'
 import mujer from '../Access/img/mujer.jpg'
-import "../pages/styles/vistaPrincipal.css";
 import { Link } from 'react-router-dom';
+
+
 class Menu extends Component {
+    constructor(props){
+        super(props);
+        this.newproyect = this.newproyect.bind(this);
+    }
+
+    newproyect = (e) => {
+        e.preventDefault();
+        <Form />
+    }
     render(){
         return(
             <div>

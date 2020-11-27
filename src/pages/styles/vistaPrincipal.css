@@ -12,11 +12,14 @@
     top: 57%;
     left: 2%;
 }
+
 .menu{
-    width: 22%;
-    height: 210%;
+
+    width: 23%;
+    height: 80%;
     background-color: #01225D;
-    top: 20%;
+    top: 17%;
+
     position: absolute;
     border: none;
     border-radius: 10px;
