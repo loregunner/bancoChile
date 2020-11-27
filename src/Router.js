@@ -1,25 +1,31 @@
 import React, {Component} from 'react';
 import Login from './pages/Login';
 import VistaPrincipal from './pages/vistaPrincipal';
-import { BrowserRouter, Redirect, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+
 import Error from './Error';
 import Form from './components/form';
-import Header from './components/header';
+//import Header from './components/header';
+import firebase from './Access/firebase';
+
 
 class Router extends Component {
+    componentDidMount(){
+        console.log('aqui');
+        firebase.auth().onAuthStateChanged((user) => {
+            if(user && window.location.pathname !== '/vista1') window.location = '/vista1';
+        })
+    }
     render(){
         return(
             <BrowserRouter>
-                <Header />
-                    <Switch>
-                        <Route exact path="/" component={Login} />
-                        {/*     {loggedIn ? <Redirect to="/vista1" /> : <VistaPrincipal />}
-                        </Route> */}
-                        <Route exact path="/vista1" component={VistaPrincipal} />
-                        <Route exact path="/form" component={Form} />
-                        
-                        <Route component ={Error} />
-                    </Switch>
+                <Switch>
+                    <Route exact path="/" component={Login} />
+                    <Route exact path="/vista1" component={VistaPrincipal} />
+                    <Route exact path="/form" component={Form} />
+                    
+                    <Route component ={Error} />
+                </Switch>
             </BrowserRouter>
         );
     }

@@ -6,10 +6,11 @@ import { Component } from 'react';
 //import Login from './pages/Login';
 //import VistaPrincipal from './pages/vistaPrincipal';
 import Router from './Router';
+//import firebase from './Access/firebase';
+
 
 export default class App extends Component {
-  render(){
-    
+  render(){  
     return(
       <div className="App">
         <Router />

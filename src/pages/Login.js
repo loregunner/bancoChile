@@ -28,6 +28,9 @@ export default class Login extends Component {
             console.log(user.email);
             console.log(user.emailVerified);
         })
+        .catch((err) => {
+            console.log(err);
+        })
     }
     
     render(){
