@@ -45,9 +45,9 @@
 .botonNuevo{
 position: absolute;
 width: 53%;
-height: 5%;
+height: 1%;
 left: 12%;
-top: 14.5%;
+top: 6%;
 font-family: raleway;
 font-style: normal;
 font-weight: 600;
@@ -57,27 +57,27 @@ align-items: center;
 text-align: right;
 background-color: #27AE60;
 border-radius:5px ;
-padding: 20.2px;
+padding: 7%;
 /* Color A03 */
 color: #FFFFFF;
 }
 
 .mas {
     position: absolute;
-    width: 21px;
-    height: 3%;
-    left: 13%;
-    top: 15.8%;
+    width: 12%;
+    height: 2%;
+    left: 11%;
+    top: 6.6%;
     color: white;
     z-index: 100;
 }
 
 .mujer {
     position: absolute;
-    width: 13%;
-    height: 6%;
+    width: 15%;
+    height: 3%;
     left: 10%;
-    top: 6%;
+    top: 2%;
     border: 0.5px solid #4F4F4F;
     box-sizing: border-box;
     border-radius: 20px;
@@ -88,19 +88,19 @@ position: absolute;
 width: 50%;
 height: 5%;
 left: 27%;
-top: 6%;
+top: 2%;
 color: white;
 font-family: Raleway;
 font-style: normal;
 font-weight: bold;
-font-size: 20px;
+font-size: 1.3vw;
 line-height: 100%;
 z-index: 100;
 }
 
 h2{
     position: absolute;
-    top: 28%;
+    top: 10%;
     left: 10%;
     font-family: Nunito;
 font-style: normal;
