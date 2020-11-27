@@ -5,7 +5,8 @@ import persona from '../Access/img/personita.png';
 import candado from '../Access/img/candadito.png';
 import './styles/Login.css';
 import Router from '../Router';
-//import { BrowserRouter, Route, Switch } from "react-router-dom";
+//import { NavLink } from 'react-router-dom';
+import Header from '../components/header';
 
 export default class Login extends Component {
     constructor(props){
@@ -33,27 +34,33 @@ export default class Login extends Component {
     }
     
     render(){
+
         return(
-            <div className='container'>
-                <div className='loginContainer'>
-                    <p>Iniciar sesión</p>
-                    <form>
-                    <div className='form-group'>
-                        <label className='usuario'>Correo: </label>
-                        <img src={persona} alt='Logo1' className='personita'/>
-                        <input className='form-control' type='email' name='email' placeholder='Correo electrónico' autoFocus />
+        <React.Fragment>
+            <div className='header'>
+                <Header />
+                <div className='container'>
+                    <div className='loginContainer'>
+                        <p>Iniciar sesión</p>
+                        <form>
+                            <div className='form-group'>
+                                <label className='usuario'>Correo: </label>
+                                <img src={persona} alt='Logo1' className='personita'/>
+                                <input className='form-control' type='email' name='email' placeholder='Correo electrónico' autoFocus />
+                            </div>
+                            <div>    
+                                <label className='contraseña'>Contraseña:</label>
+                                <img src={candado} alt='Logo1' className='candadito'/>
+                                <input className='form-control1' type='password' name='password' placeholder='Contraseña' />
+                                <button className='boton' onClick={this.login}> 
+                                    Iniciar sesión 
+                                </button>
+                            </div>
+                        </form>
                     </div>
-                    <div>    
-                        <label className='contraseña'>Contraseña:</label>
-                        <img src={candado} alt='Logo1' className='candadito'/>
-                        <input className='form-control1' type='password' name='password' placeholder='Contraseña' />
-                    </div>
-                    <button className='boton' onClick={this.login}> 
-                        Iniciar sesión 
-                    </button>
-                    </form>
                 </div>
-            </div>
+            </div>            
+            </React.Fragment>
         );
     }
 }
