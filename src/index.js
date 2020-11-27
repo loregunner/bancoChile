@@ -8,7 +8,7 @@ import reportWebVitals from './reportWebVitals';
 //import VistaPrincipal from './pages/vistaPrincipal';
 //import Header from './components/header';
 import Router from './Router';
-import { NavLink } from 'react-router-dom';
+//import { NavLink } from 'react-router-dom';
 
 
 ReactDOM.render(

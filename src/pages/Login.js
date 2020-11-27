@@ -4,7 +4,7 @@ import firebase from '../Access/firebase';
 import persona from '../Access/img/personita.png';
 import candado from '../Access/img/candadito.png';
 import './styles/Login.css';
-import Router from '../Router';
+//import Router from '../Router';
 //import { NavLink } from 'react-router-dom';
 import Header from '../components/header';
 
@@ -24,9 +24,6 @@ export default class Login extends Component {
         .then((result) => {
             // Esta es la informacion del usuario que inicia sesion
             let user = result.user;
-            if(user.emailVerified === true){
-                <Router />
-            }
             console.log(user.displayName);
             console.log(user.email);
             console.log(user.emailVerified);
