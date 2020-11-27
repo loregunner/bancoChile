@@ -1,15 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 //import Data from './components/data';
+import 'bootstrap/dist/css/bootstrap.min.css'
 import './index.css';
 //import App from './App';
 import reportWebVitals from './reportWebVitals';
 //import Login from './pages/Login.js';
-//import VistaPrincipal from './pages/vistaPrincipal';
+//import Form2 from './components/form2';
 //import Header from './components/header';
 //import VistaPrincipal from './pages/vistaPrincipal';
 import Form from './components/form';
 //import SelectBox from './components/selectbox';
+
 
 ReactDOM.render(
   <React.StrictMode>

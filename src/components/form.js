@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Menu from '../components/menu';
 import Header from '../components/header';
 import SelectBox from '../components/selectbox';
+import firebase from '../Access/firebase';
 import '../components/styles/form.css';
 
 
@@ -126,6 +127,7 @@ class Form extends Component {
           {value: ' Maipú', id:41 },
         ]}/>
         </div>
+
         <div>
             <h1 className='infoBasica'>Información básica</h1>
             </div>
