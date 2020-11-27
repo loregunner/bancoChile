@@ -16,29 +16,34 @@ class SelectBox extends Component {
     }));
   };
 
-  selectItem = (item) =>
+  selectItem = (item) =>{
     this.setState({
       selectedItem: item,
       showItems: false,
-    });
-    handleChange = e => {
-      let newState = { ...this.state };
-      newState.name = e.currentTarget.value;
-     newState.todo = todo.data.sort((s) => {
-      if(newState.name === s.comuna.includes('Lampa')){
-      }
-     })
+  })
+  let newState = { ...this.state };
+  newState.name = item.value;
+  console.log(todo.data);
+ newState.todo = todo.data.filter(
+ s => s.comuna.includes(newState.name)
+   //console.log('prueba' + s.comuna.includes(newState.name));
+//return s.comuna.includes(newState.name)
+  
+ )
+ console.log(todo.data.filter( s => s.comuna.includes(newState.name)))
+ console.log(newState.name);
+  this.setState(newState);
 
-  
-      this.setState(newState);
-  
-      this.props.onUpdateDish(this.props.index, newState.name, newState.todo);
+  //this.props.onUpdateDish(this.props.index, newState.name);
+};
+    handleChange = e => {
+
     };
 
   render() {
     
     return (
-      <div>
+      <div> 
         <div className="select-box--box" style={{width: this.props.width || 250}}>
           <div className="select-box--container">
             <div className="select-box--selected-item">
@@ -60,7 +65,6 @@ class SelectBox extends Component {
               {this.state.items.map((item) => (
                 <div
                   key={item.id}
-                  onChange={this.handleChange}
                   onClick={() => this.selectItem(item)}
                   className={this.state.selectedItem === item ? "selected" : ""}
                 >

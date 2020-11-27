@@ -26,7 +26,7 @@ class VistaPrincipal extends Component {
       {value: 'Región de Magallanes', id:16 },
       {value: 'Reg. de Arica y Parinacota', id:17 },],
       comunas:[ {value: 'Colina', id:1 },
-      {value: ' Lampa', id:2 },
+      {value: 'Lampa', id:2 },
       {value: ' Til Til', id:3 },
       {value: 'Pirque', id:4 },
       {value: 'Puente Alto', id:5 },

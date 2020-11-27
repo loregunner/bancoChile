@@ -9,7 +9,7 @@ class Data extends Component{
     render(){
         const list = [];
         const todo = data
-
+        const filter = this.props.filtro
         Object.values(todo.data).forEach((e) => {
             if (e.proyecto.includes('Inmuebles Usados')) {
                 list.push(
