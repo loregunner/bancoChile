@@ -5,13 +5,14 @@ import reportWebVitals from './reportWebVitals';
 //import App from './App';
 //import Login from './pages/Login';
 //import Form from './components/form';
-import VistaPrincipal from './pages/vistaPrincipal';
+//import VistaPrincipal from './pages/vistaPrincipal';
 //import Header from './components/header';
+import Router from './Router';
 
 
 ReactDOM.render(
   <React.StrictMode>
-    <VistaPrincipal />
+    <Router />
   </React.StrictMode>,
   document.getElementById('root')
 );
