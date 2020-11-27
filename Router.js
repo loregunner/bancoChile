@@ -13,7 +13,7 @@ class Router extends Component {
     componentDidMount(){
         console.log('aqui');
         firebase.auth().onAuthStateChanged((user) => {
-            if(user && window.location.pathname !== '/vista1') window.location = '/vista1';
+            if(user && window.location.pathname !== "/bancoChile/vista1") window.location = '/vista1';
         })
     }
     render(){
