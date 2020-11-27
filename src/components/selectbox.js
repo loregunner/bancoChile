@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import "./styles/selectbox.css";
- import todo from '../Access/data/data.json'
-import Data from './data.js'
+import todo from '../Access/data/data.json'
+//import Data from './data.js'
+
 class SelectBox extends Component {
   state = {
     items: this.props.items || [],
@@ -20,6 +21,7 @@ class SelectBox extends Component {
     this.setState({
       selectedItem: item,
       showItems: false,
+
   })
   let newState = { ...this.state };
   newState.name = item.value;
@@ -57,11 +59,11 @@ class SelectBox extends Component {
                     : "select-box--arrow-down"
                 }`}
               ></span>
-            </div>
-            <div
-              style={{ display: this.state.showItems ? "block" : "none" }}
-              className="select-box--items"
-            >
+              </div>
+              <div
+                style={{ display: this.state.showItems ? "block" : "none" }}
+                className="select-box--items"
+              >
               {this.state.items.map((item) => (
                 <div
                   key={item.id}
