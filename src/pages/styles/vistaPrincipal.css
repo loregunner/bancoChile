@@ -13,10 +13,10 @@
     left: 2%;
 }
 .menu{
-    width: 17%;
-    height: 80%;
+    width: 22%;
+    height: 210%;
     background-color: #01225D;
-    top: 19%;
+    top: 20%;
     position: absolute;
     border: none;
     border-radius: 10px;
@@ -25,10 +25,10 @@
     
 .ancla{
     position: absolute;
-    top: 13.5%;
+    top: 13.7%;
     left: 5%;
     text-decoration: none;
-    font-size: 1.5vw;
+    font-size: 1.6vw;
     font-family: Nunito;
 }
 .volver{

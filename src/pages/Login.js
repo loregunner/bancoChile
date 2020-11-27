@@ -5,15 +5,30 @@ import persona from '../Access/img/personita.png'
 import candado from '../Access/img/candadito.png'
 import './styles/Login.css'
 
-
 export default class Login extends Component {
     constructor(props){
         super(props);
         this.login = this.login.bind(this);
-        this.login2 = this.login2.bind(this);
+        this.state = {
+            userLoggedIn: false 
+        }
+        console.log('El componente aun no se ha montado');
     }
 
-    //login Google
+    componentDidMount() {
+        firebase.auth().onAuthStateChanged((user) => {
+            if(user){
+                this.setState({
+                    userLoggedIn: true
+                })
+                console.log('El componente está disponible en el DOM');
+            }
+            else{
+
+            }
+        })
+    }
+    
     login = (e) => {
         e.preventDefault();
         let provider = new firebase.auth.providerData();
@@ -23,13 +38,21 @@ export default class Login extends Component {
         firebase.auth().signInWithPopup(provider)
         .then((result) => {
             console.log(result);
-            //Esto le da un token de acceso a google
-            let token = result.credential.accessToken;
-            console.log(token);
             // Esta es la informacion del usuario que inicia sesion
             let user = result.user;
             console.log(user);
-        });
+        })
+        .catch((error) => {
+            console.log(error);
+        })
+    }
+
+    logOut = () => {
+        if(this.setState.userLoggedIn === true){
+            return(
+                <button onClick={}>Cerrar Sesión</button>
+            )
+        }
     }
 
     render(){
@@ -48,7 +71,7 @@ export default class Login extends Component {
                         <img src={candado} alt='Logo1' className='candadito'/>
                         <input className='form-control1' type='password' name='password' placeholder='Contraseña' />
                     </div>
-                    <button varian='contained' className='boton' onClick={this.login}> 
+                    <button className='boton' onClick={this.Login}> 
                         Iniciar sesión 
                     </button>
                     </form>

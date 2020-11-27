@@ -4,14 +4,14 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 //import App from './App';
 //import Login from './pages/Login';
-import Form from './components/form';
-//import VistaPrincipal from './pages/vistaPrincipal';
+//import Form from './components/form';
+import VistaPrincipal from './pages/vistaPrincipal';
 //import Header from './components/header';
 
 
 ReactDOM.render(
   <React.StrictMode>
-    <Form />
+    <VistaPrincipal />
   </React.StrictMode>,
   document.getElementById('root')
 );

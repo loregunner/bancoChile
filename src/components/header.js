@@ -8,17 +8,19 @@ class Header extends Component {
     render(){
       return(
         <React.Fragment>
-        <div className='container1'>
-          <div className='logo1'>
-          <img src={credi} alt='Logo1'/>
-          </div>
-          <div className='logo2'>
-          <img src={logo} alt='Logo'/>
-          </div>
-          <div className='logo3'>
-          <img src={edw} alt='Logo2'/>
-          </div>
-        </div>
+          <nav className='container1'>
+            <div>
+              <div className='logo1'>
+                <img src={credi} alt='Logo1'/>
+              </div>
+              <div className='logo2'>
+                <img src={logo} alt='Logo'/>
+              </div>
+              <div className='logo3'>
+                <img src={edw} alt='Logo2'/>
+              </div>
+            </div>
+          </nav>      
         </React.Fragment>
       );
     }
