@@ -1,9 +1,8 @@
-const { error } = require('console');
 const fs = require('fs');
 const pdf = require('pdf-parse');
+const { error } = require('console');
 
-
-const pdfFile = fs.readFileSync('react-beginners-handbook.pdf');
+const pdfFile = fs.readFileSync('sample.pdf');
 
 pdf(pdfFile)
 .then((data) => {

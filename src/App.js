@@ -1,25 +1,64 @@
 import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Component } from 'react';
+//import Login from './pages/Login';
+//import Login from './pages/Login';
+//import VistaPrincipal from './pages/vistaPrincipal';
+import Router from './Router';
+//import firebase from './Access/firebase';
 
-function App() {
+
+export default class App extends Component {
+  render(){  
+    return(
+      <div className="App">
+        <Router />
+        <header className="App-header">
+          <img src={logo} className="App-logo" alt="logo" />
+        </header>
+      </div>
+    );
+  }
+}
+
+/* export default function App() {
+  <div className="App">
+    <header className="App-header">
+      <img src={logo} className="App-logo" alt="logo" />
+    </header>
+  </div>
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div>
+        <nav>
+          <ul>
+            <li>
+              <Link to="/">Login</Link>
+            </li>
+            <li>
+              <Link to="/vistaPrincipal">VistaPrincipal</Link>
+            </li>
+          </ul>
+        </nav>
+        <Switch>
+          <Route path="/">
+            <Login />
+          </Route>
+          <Route path="/vistaPrincipal">
+            <VistaPrincipal />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
   );
 }
 
-export default App;
+Login = () => {
+  return <h2>Home</h2>;
+}
+
+VistaPrincipal = () => {
+  return <h2>About</h2>;
+}
+ */
