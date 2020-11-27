@@ -26,7 +26,6 @@ class SelectBox extends Component {
       newState.name = e.currentTarget.value;
      newState.todo = todo.data.sort((s) => {
       if(newState.name === s.comuna.includes('Lampa')){
-        return <Data/>
       }
      })
 
